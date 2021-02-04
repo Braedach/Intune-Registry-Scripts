@@ -1,6 +1,7 @@
 ﻿#Setup Auto update on Google Chrome
-#Call the registry value and set the value.  This entry needs to be created on other machines as no default policy exists
-#Updated 24-01-2021
+#Call the registry value to see if it exists, if it does modify it, if it doesnt create it.
+#This control has been depreciated and removed from Intune.  ADMX control is used in lieu
+#Updated 04-02-2021
 
 
 If (Get-ItemProperty -Path 'Registry::HKLM\SOFTWARE\Policies\Google\Update')
