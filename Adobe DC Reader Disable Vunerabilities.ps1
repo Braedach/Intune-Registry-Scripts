@@ -3,7 +3,7 @@
 #Updated 24-01-2021 and tested on machine with Adobe DC installed
 
 
-If (Get-ItemProperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown')
+If (Test-path -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown')
     {
     #If the key already exists just set the value
     Write-Output "True"
