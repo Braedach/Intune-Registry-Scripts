@@ -3,13 +3,13 @@
 #Updated 24-01-2021 and tested on machine with Adobe DC installed
 
 
-If (Test-path -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown')
+If (Test-path -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown')
     {
     #If the key already exists just set the value
     Write-Output "True"
-    Set-Itemproperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown' -Name 'bDisableJavaScript' -value '1'
-    Set-Itemproperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown' -Name 'bEnableFlash' -value '0'
-    Get-ItemProperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown'
+    Set-Itemproperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown' -Name 'bDisableJavaScript' -value '1'
+    Set-Itemproperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown' -Name 'bEnableFlash' -value '0'
+    Get-ItemProperty -Path 'Registry::HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown'
     }
     else
     {
