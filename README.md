@@ -4,6 +4,7 @@ These are a collection of scripts I am using in Intune to solve problems in rela
 They are available as is but they work fine on a test tenant.
 
 Test tenant is very small about 10 Windows 10 PCs max with two joined via autopilot and the rest registered (BYOD) personal managed MDM.
+Im more interested in roaming devices at this stage rather than full corporate managed desktops which are normally managed via GP
 
 Help yourself if you are learning as this is where I started.
 
